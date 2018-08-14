@@ -1,4 +1,10 @@
- /* Extra small devices (phones, 600px and down) */
+body {
+    background-image: url(../images/funky-lines.png);
+    background-repeat: repeat;
+    background-color: #eee;
+}
+
+/* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) 
     {
         header {
@@ -45,6 +51,115 @@
 
         nav ul li {
             display: inline;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        .main_section {
+            position: relative;
+            top: 50px;
+            padding: 0 20px;
+        }
+
+        .content_box {
+            background-color: #fff;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 40px 0px 200px 0px;
+            padding: 5px 40px 40px 40px;        
+            -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+            -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+            box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 25px 0px 25px 0px;
+            color: #4aaaa5;
+            font-size: 2em;
+            font-weight: 600;
+            letter-spacing: .04em;
+        }
+
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #777;
+            font-size: 1.25em;
+            font-weight: 100;
+            margin: 10px 0px;
+        }
+
+        hr {
+            margin-bottom: 40px;
+            background-color: #aaa;
+            border-color: #aaa;
+            color: #aaa;
+            opacity: 40%;
+        }
+
+        /* CONTACT PAGE STYLES */
+
+        .submit {
+            background: #4aaaa5;
+            height: 40px;
+            width: 120px;
+            color: #fff;
+            margin-top: 20px;
+            /* padding: 10px; */
+            border: none;
+            font-size: 1.25em;
+            font-weight: 300;
+            -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+            -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+            box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+        }
+
+        .submit:hover {
+            -webkit-box-shadow: 1px 1px 1px 0px rgba(189,157,155,0.6);
+            -moz-box-shadow: 1px 1px 1px 0px rgba(189,157,155,0.6);
+            box-shadow: 0px 1px 1px 1px rgba(189,157,155,0.6);
+        }
+
+        .submit:active {
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
+        }
+
+        input {
+            width: 90%;
+            height: 2em;
+            font-size: 1em;
+            color: #777;
+        }
+        
+        textarea {
+            width: 90%;
+            height: 300px;
+            border: 1px solid #cccccc;
+            padding: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            line-height: 1.5em;
+            color: #777;
+        }
+
+        footer {
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            height: 60px;
+            background: #666;
+            border-top: 8px solid #ff810a;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
         }
 }
 
